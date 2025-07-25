@@ -1,0 +1,61 @@
+.slider > .track-bars-container {
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.slider .track-mask {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+.slider .track-mask.empty {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.slider .track {
+    flex-grow: 1;
+    background-size: 100% 70%;
+}
+
+.slider .track.filled {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/slide_horizontal_color.png?fileID=-9083129648240841659&guid=1730c09e56b642f4aaef8bb02f2bb326&type=3#slide_horizontal_color_0");
+}
+
+.slider .track.empty {
+    background-image: url("project://database/Assets/Sprites/Grey/Default/slide_horizontal_color.png?fileID=-9083129648240841659&guid=e19ee5d4f92b5084699649edf16b94db&type=3#slide_horizontal_color_0");
+}
+
+.slider .thumb {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/slide_hangle.png?fileID=-5805699575359269037&guid=f88d67b881ac43242b9db0093aaac485&type=3#slide_hangle_0");
+    height: 85%;
+    width: 15%;
+}
+
+.slider > .labels-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.slider .label {
+    color: rgb(87, 86, 87);
+    width: 50%;
+}
+
+.slider .label.left {
+    -unity-text-align: middle-left;
+    margin-left: 7.5px;
+}
+
+.slider .label.right {
+    -unity-text-align: middle-right;
+    margin-right: 7.5px;
+}

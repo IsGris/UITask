@@ -1,0 +1,13 @@
+.slider .filled .step-mark {
+    height: 70%;
+    width: 15%;
+    position: absolute;
+    background-image: url("project://database/Assets/Sprites/Blue/Default/slide_horizontal_color_section.png");
+}
+
+.slider .empty .step-mark {
+    height: 70%;
+    width: 15%;
+    position: absolute;
+    background-image: url("project://database/Assets/Sprites/Grey/Default/slide_horizontal_color_section.png");
+}
