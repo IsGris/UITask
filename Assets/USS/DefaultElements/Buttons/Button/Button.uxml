@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/DefaultElements/Button/Button.uss?fileID=7433441132597879392&amp;guid=92c640b3a88a5fa46959d3dc80f23907&amp;type=3#Button" />
+    <ui:Button text="Button" enabled="true" class="with-pre-text-image">
+        <ui:Image text="Button" name="btn-checkmark" class="pre-text-image" />
+    </ui:Button>
+</ui:UXML>

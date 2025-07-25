@@ -1,0 +1,9 @@
+Button.with-icon-only {
+    padding-left: 8px;
+    align-items: center;
+}
+
+Button > Image {
+    width: 75%;
+    height: 75%;
+}

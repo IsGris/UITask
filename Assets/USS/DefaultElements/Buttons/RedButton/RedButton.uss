@@ -1,0 +1,11 @@
+Button.red {
+    background-image: url("project://database/Assets/Sprites/Red/Default/button_square_depth_flat.png");
+}
+
+Button.red:hover {
+    -unity-background-image-tint-color: rgb(225, 225, 225);
+}
+
+Button.red:active {
+    background-image: url("project://database/Assets/Sprites/Red/Default/button_square_flat.png");
+}
