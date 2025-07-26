@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/USS/DefaultElements/IconButton/IconButton.uss?fileID=7433441132597879392&amp;guid=77405ead4b37dcb479cc991f01d3f620&amp;type=3#IconButton" />
+    <Style src="project://database/Assets/USS/DefaultElements/Buttons/IconButton/IconButton.uss?fileID=7433441132597879392&amp;guid=77405ead4b37dcb479cc991f01d3f620&amp;type=3#IconButton" />
     <ui:Button class="with-icon-only">
-        <ui:Image enabled="true" class="btn-icon" style="background-image: url(&quot;project://database/Assets/Sprites/Green/Double/check_round_round_circle.png?fileID=2800000&amp;guid=6793d845a8f37964382516215109d8b8&amp;type=3#check_round_round_circle&quot;);" />
+        <ui:Image enabled="true" class="btn-icon" />
     </ui:Button>
 </ui:UXML>

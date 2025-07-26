@@ -1,0 +1,22 @@
+.unity-base-text-field__input {
+    background-image: url("project://database/Assets/Sprites/Extra/Default/input_square.png");
+    -unity-slice-left: 15px;
+    -unity-slice-right: 15px;
+    -unity-slice-top: 15px;
+    -unity-slice-bottom: 15px;
+    background-color: rgba(0,0,0,0);
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 18px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.unity-text-element {
+    color: rgba(130, 131, 147, 1);
+}
+
+.unity-base-text-field__input--placeholder > .unity-text-element {
+    color: rgba(200, 201, 214, 1);
+}

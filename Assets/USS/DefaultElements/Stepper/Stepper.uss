@@ -1,0 +1,38 @@
+.stepper {
+    flex-direction: row;
+}
+
+.stepper-button {
+    width: 15%;
+    height: 100%
+}
+
+.stepper-input {
+    width: 70%;
+    height: 100%;
+}
+
+.stepper-input .unity-base-text-field__input {
+    border-left-width: 0px;
+    -unity-text-align: middle-center;
+}
+
+.stepper-button .unity-button.with-icon-only {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/button_square_flat.png");
+    background-size: 50% 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.stepper-button .unity-button.with-icon-only .btn-icon {
+    background-image: url("project://database/Assets/Sprites/Extra/Default/icon_arrow_down_light.png");
+    background-size: 50% 50%;
+}
+.stepper-button.left .unity-button.with-icon-only .btn-icon . {
+    rotate: 90deg;
+}
+.stepper-button.right .unity-button.with-icon-only .btn-icon . {
+    rotate: 270deg;
+}

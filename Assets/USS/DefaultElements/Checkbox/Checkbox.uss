@@ -1,0 +1,10 @@
+.unity-toggle__input {
+    height: 100%;
+}
+.unity-toggle__checkmark {
+    background-image: url("project://database/Assets/Sprites/Grey/Default/check_square_color_cross.png");
+    height: 100%;
+}
+Toggle:checked .unity-toggle__checkmark {
+    background-image: url("project://database/Assets/Sprites/Grey/Default/check_square_color_checkmark.png");
+}
