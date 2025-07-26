@@ -2,9 +2,16 @@
     height: 100%;
 }
 .unity-toggle__checkmark {
-    background-image: url("project://database/Assets/Sprites/Grey/Default/check_square_color_cross.png");
+    background-image: url("project://database/Assets/Sprites/Grey/Double/check_square_color_cross.png");
+    height: 100%;
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 0.3s;
+}
+Toggle:hover .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgba(233, 233, 233, 1);
     height: 100%;
 }
 Toggle:checked .unity-toggle__checkmark {
-    background-image: url("project://database/Assets/Sprites/Grey/Default/check_square_color_checkmark.png");
+    background-image: url("project://database/Assets/Sprites/Grey/Double/check_square_color_checkmark.png");
 }
+

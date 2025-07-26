@@ -19,6 +19,12 @@
     width: 100%;
     align-items: center;
     flex-direction: row;
+    -unity-background-image-tint-color: rgb(255,255,255);
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 0.3s;
+}
+.dropdown-show:hover {
+    -unity-background-image-tint-color: rgba(228, 228, 228, 1);
 }
 
 .dropdown-show-text-container {
@@ -45,6 +51,13 @@
     -unity-slice-right: 46;
     -unity-slice-top: 46;
     -unity-slice-bottom: 46;
+    -unity-background-image-tint-color: rgb(255,255,255);
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 0.3s;
+}
+
+.dropdown-show-icon-container:hover {
+    -unity-background-image-tint-color: rgba(207, 207, 207, 1);
 }
 
 .dropdown-show-icon {
@@ -52,21 +65,30 @@
     background-image: url("project://database/Assets/Sprites/Extra/Default/icon_arrow_up_light.png?fileID=6178840499434421544&guid=f6cdf82bf4182ea47a990e05f4ac06f2&type=3#icon_arrow_up_light_0");
     background-size: 8.5px 5.5px;
     -unity-background-image-tint-color: rgb(100, 101, 123);
+    transition-property: max-height;
+    transition-duration: 0.3s;
 }
 
-.dropdown-scroll-container {
+.dropdown-scroll-container:enabled {
     overflow: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
     margin-top: 34px;
     opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
 .dropdown-scroll-container:disabled {
     opacity: 0;
-    display: none;
-    visibility: hidden;
+}
+
+.dropdown-scroll-container:disabled .dropdown-mask-container {
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
 }
 
 .dropdown-mask-container {
@@ -89,6 +111,13 @@
     height: 25px;
     min-height: 25px;
     max-height: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.dropdown-element:hover {
+    background-color: rgba(228, 228, 228, 1);
 }
 
 .dropdown-element-text {
@@ -97,19 +126,22 @@
 }
 
 .dropdown-element-divider {
-    height: 3px;
-    min-height: 3px;
-    max-height: 3px;
-    background-image: url("project://database/Assets/Sprites/Extra/Default/divider.png?fileID=-2603600634579841175&guid=073ceb7522f899149baec51c3f4641ef&type=3#divider_0");
+    height: 2px;
+    min-height: 2px;
+    max-height: 2px;
+    background-image: url("project://database/Assets/Sprites/Extra/Default/divider_no_white.png");
 }
 
 .dropdown .elements-container {
     top: 0;
 }
 
-.dropdown .dropdown-show-icon.open {
+.dropdown .dropdown-show-icon {
+    transition-property: rotate;
+    transition-duration: 0.3s;
     rotate: 0deg;
 }
+
 .dropdown .dropdown-show-icon.close {
     rotate: 180deg;
 }

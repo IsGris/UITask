@@ -19,6 +19,7 @@ namespace UnityEngine.UIElements
         public static readonly string emptyTrackBarUssClassName = "empty";
 
         public static readonly string thumbUssClassName = "thumb";
+        public static readonly string activeThumbUssClassName = thumbUssClassName + "-used";
 
         public static readonly string labelsContainerUssClassName = "labels-container";
         public static readonly string labelUssClassName = "label";
@@ -164,18 +165,21 @@ namespace UnityEngine.UIElements
                 {
                     Value = GetSliderValueFromClick(evt.localMousePosition.x / trackWidth);
                     _mouseDownOnSlider = true;
+                    m_Thumb.AddToClassList(activeThumbUssClassName);
                 });
             if (panel?.visualTree != null)
                 panel.visualTree.RegisterCallback<MouseUpEvent>(
                     evt =>
                     {
                         _mouseDownOnSlider = false;
+                        m_Thumb.RemoveFromClassList(activeThumbUssClassName);
                     });
             else
                 m_TrackBarsContainer.RegisterCallback<MouseUpEvent>(
                 evt =>
                 {
                     _mouseDownOnSlider = false;
+                     m_Thumb.RemoveFromClassList(activeThumbUssClassName);
                 });
             m_TrackBarsContainer.RegisterCallback<MouseMoveEvent>(
                     evt =>

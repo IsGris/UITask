@@ -4,7 +4,8 @@
 
 .stepper-button {
     width: 35px;
-    height: 100%
+    height: 100%;
+    overflow: hidden;
 }
 
 .stepper-input {
@@ -27,21 +28,46 @@
     padding-bottom: 0px;
     height: 90%;
     margin-top: 5%;
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 0.1s;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+}
+
+.stepper-button .unity-button.with-icon-only:hover {
+    -unity-background-image-tint-color: rgba(228, 228, 228, 1);
+}
+.stepper-button .unity-button.with-icon-only:active {
+    -unity-background-image-tint-color: rgba(189, 189, 189, 1);
 }
 
 .stepper-button .unity-button.with-icon-only .btn-icon {
     background-image: url("project://database/Assets/Sprites/Extra/Default/icon_arrow_down_light.png");
     background-size: 50% 50%;
 }
-.stepper-button.left {
-    margin-right: -4px;
+.stepper-button.left .unity-button.with-icon-only {
+    width: 37px;
+    translate: 5px 0px;
+    transition-property: translate;
+    transition-duration: 0.1s;
+}
+.stepper-button.left .unity-button.with-icon-only:hover {
+    translate: 3px 0px;
+}
+.stepper-button.left .unity-button.with-icon-only:active {
+    translate: 1px 0px;
 }
 .stepper-button.right .unity-button.with-icon-only {
-    width: 39px;
-    margin-left: -4px;
+    width: 37px;
+    margin-left: -8px;
+    transition-property: margin-left;
+    transition-duration: 0.1s;
 }
-.stepper-button.right {
-    overflow: hidden;
+.stepper-button.right .unity-button.with-icon-only:hover {
+    margin-left: -6px;
+}
+.stepper-button.right .unity-button.with-icon-only:active {
+    margin-left: -4px;
+    translate: 0 0px;
 }
 .stepper-button.left .unity-button.with-icon-only .btn-icon {
     rotate: 90deg;

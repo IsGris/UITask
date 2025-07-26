@@ -2,7 +2,6 @@
     justify-content: center;
     margin-left: -25px;
     flex-direction: row;
-    overflow: hidden;
     align-items:center;
     max-width: none;
     max-height: none;
@@ -47,12 +46,23 @@
     align-self: flex-start;
     font-size: 14px;
     color: rgba(87, 86, 87, 1);
+    translate: 0px 0px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+    transition-property: -unity-background-image-tint-color, translate; 
+    transition-duration: 0.3s, 0.3s;
 }
 .unity-tab__header:hover {
     background-color: rgba(0,0,0,0);
+    -unity-background-image-tint-color: rgba(231, 231, 231, 1);
+    translate: 0px -3px;
 }
 .unity-tab__header:checked {
     background-image: url("project://database/Assets/Sprites/Blue/Default/button_square_flat.png");
+}
+.unity-tab__header:checked Label {
+    color: rgba(87, 86, 87, 1);
+    transition-property: color; 
+    transition-duration: 0.3s;
 }
 .unity-tab__header:checked Label {
     color: rgba(255, 255, 255, 1);

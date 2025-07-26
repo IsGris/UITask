@@ -1,3 +1,20 @@
+.stepped-slider .thumb {
+    transition-property: left, translate, -unity-background-image-tint-color;
+    transition-duration: 0s, 0.3s, 0.3;
+    translate: 0px 0px;
+}
+
+.stepped-slider .track-mask.filled {
+    transition-property: width;
+    transition-duration: 0s;
+}
+
+.stepped-slider .track-mask.empty {
+    align-items: flex-end;
+    transition-property: width, left;
+    transition-duration: 0s;
+}
+
 .slider .filled .step-mark {
     height: 70%;
     width: 15%;

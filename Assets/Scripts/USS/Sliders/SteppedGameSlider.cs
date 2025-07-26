@@ -9,6 +9,7 @@ namespace UnityEngine.UIElements
     [UxmlElement]
     public partial class SteppedGameSlider : GameSlider
     {
+        public static readonly string ussClassName = "stepped-slider";
         public static readonly string stepUssClassName = "step-mark";
 
         public event Action OnSteppedValueChange;
@@ -39,6 +40,8 @@ namespace UnityEngine.UIElements
 
         public SteppedGameSlider() : base()
         {
+            AddToClassList(ussClassName);
+
             UpdateStepsRenderer();
             AlignValueToStep();
 

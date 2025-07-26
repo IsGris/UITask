@@ -13,11 +13,18 @@
     justify-content: center;
 }
 
+.slider .track-mask.filled {
+    transition-property: width;
+    transition-duration: 0.30s;
+}
+
 .slider .track-mask.empty {
     overflow: hidden;
     position: absolute;
     height: 100%;
     align-items: flex-end;
+    transition-property: width, left;
+    transition-duration: 0.30s, 0.30s;
 }
 
 .slider .track {
@@ -37,6 +44,15 @@
     background-image: url("project://database/Assets/Sprites/Blue/Default/slide_hangle.png?fileID=-5805699575359269037&guid=f88d67b881ac43242b9db0093aaac485&type=3#slide_hangle_0");
     height: 85%;
     width: 15%;
+    transition-property: left, translate, -unity-background-image-tint-color;
+    transition-duration: 0.30s;
+    translate: 0px 0px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+}
+
+.slider .thumb.thumb-used {
+    translate: 0px 4px;
+    -unity-background-image-tint-color: rgba(223, 223, 223, 1);
 }
 
 .slider > .labels-container {
