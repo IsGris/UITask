@@ -53,10 +53,6 @@ public partial class SteppedGameSlider : GameSlider
 
     private void AlignValueToStep()
     {
-        Debug.Log(Value);
-        Debug.Log(Step);
-        Debug.Log(MinValue);
-        Debug.Log(MaxValue);
         if (Value % Step == 0 || Value == MinValue || Value == MaxValue) return;
 
         float distanceToMin = Mathf.Abs(Value - MinValue);
