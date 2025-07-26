@@ -65,6 +65,8 @@
 
 .dropdown-scroll-container:disabled {
     opacity: 0;
+    display: none;
+    visibility: hidden;
 }
 
 .dropdown-mask-container {

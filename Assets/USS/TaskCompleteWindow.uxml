@@ -1,0 +1,50 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Template name="RedCrossButton" src="project://database/Assets/USS/DefaultElements/Buttons/RedCrossButton/RedCrossButton.uxml?fileID=9197481963319205126&amp;guid=1bbc91788b60a4c4990273e76fba6d5e&amp;type=3#RedCrossButton" />
+    <Template name="Button" src="project://database/Assets/USS/DefaultElements/Buttons/Button/Button.uxml?fileID=9197481963319205126&amp;guid=84bd7cf48764baa4da12d869c44c75c3&amp;type=3#Button" />
+    <Template name="RedCrossButtonRounded" src="project://database/Assets/USS/DefaultElements/Buttons/RedCrossButtonRounded/RedCrossButtonRounded.uxml?fileID=9197481963319205126&amp;guid=9cacedf4593ac8742a83e169f1ffa494&amp;type=3#RedCrossButtonRounded" />
+    <Template name="InputField" src="project://database/Assets/USS/DefaultElements/InputField/InputField.uxml?fileID=9197481963319205126&amp;guid=c8b3c81b695a0d049bf8efec7880e92a&amp;type=3#InputField" />
+    <Template name="Checkbox" src="project://database/Assets/USS/DefaultElements/Checkbox/Checkbox.uxml?fileID=9197481963319205126&amp;guid=4b3c799d9dc635d4a8b436117fa30690&amp;type=3#Checkbox" />
+    <Style src="project://database/Assets/USS/DefaultElements/TabView/TabView.uss?fileID=7433441132597879392&amp;guid=4b40934364ca6904ca24bda92edad8e0&amp;type=3#TabView" />
+    <VisualElement name="ScreenContainer" style="flex-grow: 1; align-items: center; justify-content: center; align-self: center; align-content: center; min-height: 100%; max-height: 100%; height: 100%;">
+        <TabView style="height: 482px; width: 301px;">
+            <Tab label="Tab">
+                <VisualElement name="DownButtonsContainer" style="flex-grow: 1; justify-content: center; align-items: center; flex-direction: row;">
+                    <Instance template="RedCrossButton" style="height: 52px; width: 76px; margin-right: auto;" />
+                    <Instance template="Button" style="width: 175px;">
+                        <AttributeOverrides element-name="GreenButton" text="Accept" />
+                    </Instance>
+                </VisualElement>
+                <VisualElement name="Divider" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Extra/Double/divider.png?fileID=2800000&amp;guid=6e15ea2f6ccd7dc42befb40443a28137&amp;type=3#divider&quot;); max-height: 5px;" />
+                <Instance template="RedCrossButtonRounded" style="height: 100px; width: 100px; right: -49px; position: absolute; top: -47px; scale: 0.2 0.2;" />
+                <VisualElement name="SlidersContainer" style="flex-grow: 0;">
+                    <Label text="Sliders" style="height: 27px; -unity-text-align: middle-left; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; padding-top: 0; padding-bottom: 0; padding-left: 0; font-size: 17px;" />
+                    <GameSlider max-value="100" min-value="5" style="height: 58px; font-size: 14px; width: 199px; margin-bottom: 6px;" />
+                    <SteppedGameSlider max-value="100" step="25" value="1" min-value="0" style="height: 59px; font-size: 14px; width: 199px; margin-bottom: 10px;" />
+                </VisualElement>
+                <GameDropdown elements="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20" scroll-speed="1" header-value="20" style="height: 43px; scale: 1.5 1.5; width: 173px; transform-origin: left top; margin-bottom: 5px;" />
+                <VisualElement name="ElementsContainer" style="flex-direction: column;">
+                    <VisualElement name="NameElement" style="flex-grow: 0; flex-direction: row; height: 38px; margin-bottom: 5px;">
+                        <Label text="Name" style="height: 100%; -unity-text-align: middle-left; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; padding-top: 0; padding-bottom: 0; padding-left: 0; font-size: 17px;" />
+                        <Instance template="InputField" style="width: 154px; margin-left: auto;">
+                            <AttributeOverrides element-name="TextField" placeholder-text="Kenney" />
+                        </Instance>
+                    </VisualElement>
+                    <VisualElement name="StepperElement" style="flex-grow: 1; flex-direction: row; height: 38px; max-height: 38px; margin-bottom: 5px;">
+                        <Label text="Stepper" style="height: 100%; -unity-text-align: middle-left; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; padding-top: 0; padding-bottom: 0; padding-left: 0; font-size: 17px;" />
+                        <GameStepper style="width: 155px; margin-left: auto;" />
+                    </VisualElement>
+                    <VisualElement name="CheckboxElement" style="flex-grow: 1; flex-direction: row; height: 38px; max-height: 38px; margin-bottom: 5px;">
+                        <Label text="Checkbox" style="height: 100%; -unity-text-align: middle-left; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; padding-top: 0; padding-bottom: 0; padding-left: 0; font-size: 17px;" />
+                        <Instance template="Checkbox" style="width: 38px; margin-left: auto;" />
+                    </VisualElement>
+                </VisualElement>
+            </Tab>
+            <Tab label="Tab">
+                <Label text="UXML tab: This is some content for the second Tab." />
+            </Tab>
+            <Tab label="Tab">
+                <Label text="UXML tab: This is some content for the second Tab." />
+            </Tab>
+        </TabView>
+    </VisualElement>
+</UXML>

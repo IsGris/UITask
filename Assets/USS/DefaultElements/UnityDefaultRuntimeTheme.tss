@@ -6,6 +6,8 @@
 @import url("Checkbox/Checkbox.uss");
 @import url("InputField/InputField.uss");
 @import url("Stepper/Stepper.uss");
+@import url("TabView/TabView.uss");
+
 
 
 
@@ -16,4 +18,15 @@
 
 * {
     -unity-font-definition: url("project://database/Assets/Fonts/Kenney%20Future.ttf?fileID=12800000&guid=9da16061379573040a49642c4e83c0d5&type=3#Kenney Future");
+}
+
+Label {
+    color: rgba(87, 86, 87, 1);
+}
+.unity-text-element {
+    color: rgba(87, 86, 87, 1);
+}
+
+.unity-ui-document__root {
+    flex-grow: 1;
 }

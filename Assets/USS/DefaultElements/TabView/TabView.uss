@@ -1,0 +1,80 @@
+.unity-tab-view__content-viewport {
+    justify-content: center;
+    margin-left: -25px;
+    flex-direction: row;
+    overflow: hidden;
+    align-items:center;
+    max-width: none;
+    max-height: none;
+}
+
+.unity-tab-view__header-container {
+    flex-direction: row;
+    max-width: none;
+    max-height: none;
+    flex-shrink: 0;
+    height: 32px;
+}
+
+.unity-tab-view__content-container {
+    margin-top: -4px;
+    height: 100%;
+}
+
+.unity-tab__content-container {
+    margin-top: -4px;
+    height: 100%;
+}
+
+.unity-tab__header {
+    margin-left: 25px;
+    height: 100%;
+}
+
+.unity-tab__header {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/check_square_grey.png");
+    -unity-background-image-tint-color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,0);
+    -unity-slice-left: 6;
+    -unity-slice-right: 6;
+    -unity-slice-top: 6;
+    -unity-slice-bottom: 6;
+    flex-shrink: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    font-size: 14px;
+    color: rgba(87, 86, 87, 1);
+}
+.unity-tab__header:hover {
+    background-color: rgba(0,0,0,0);
+}
+.unity-tab__header:checked {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/button_square_flat.png");
+}
+.unity-tab__header:checked Label {
+    color: rgba(255, 255, 255, 1);
+}
+
+.unity-tab {
+    height: 100%;
+    display: none;
+}
+.unity-tab:checked {
+    display: flex;
+}
+
+.unity-tab__content-container {
+    background-image: url("project://database/Assets/Sprites/Blue/Default/check_square_grey.png");
+    -unity-slice-left: 6;
+    -unity-slice-right: 6;
+    -unity-slice-top: 6;
+    -unity-slice-bottom: 6;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    flex-direction: column-reverse;
+}

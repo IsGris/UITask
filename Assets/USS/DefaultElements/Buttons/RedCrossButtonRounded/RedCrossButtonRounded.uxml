@@ -1,7 +1,7 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/USS/DefaultElements/IconButton/IconButton.uss?fileID=7433441132597879392&amp;guid=77405ead4b37dcb479cc991f01d3f620&amp;type=3#IconButton" />
-    <Style src="project://database/Assets/USS/DefaultElements/RedButton/RedButton.uss?fileID=7433441132597879392&amp;guid=11093f1c63712684bb3ee3757f2e469c&amp;type=3#RedButton" />
-    <ui:Button class="with-icon-only red" style="background-image: url(&quot;project://database/Assets/Sprites/Red/Default/button_round_flat.png?fileID=2800000&amp;guid=9b1c13e88d7428b47bf8b5bd865c9796&amp;type=3#button_round_flat&quot;); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; padding-bottom: 15px; padding-top: 15px; padding-right: 15px; padding-left: 15px;">
+    <Style src="project://database/Assets/USS/DefaultElements/Buttons/IconButton/IconButton.uss?fileID=7433441132597879392&amp;guid=77405ead4b37dcb479cc991f01d3f620&amp;type=3#IconButton" />
+    <Style src="project://database/Assets/USS/DefaultElements/Buttons/RedButton/RedButton.uss?fileID=7433441132597879392&amp;guid=11093f1c63712684bb3ee3757f2e469c&amp;type=3#RedButton" />
+    <ui:Button class="with-icon-only red" style="background-image: url(&quot;project://database/Assets/Sprites/Red/Default/button_round_flat.png?fileID=2800000&amp;guid=9b1c13e88d7428b47bf8b5bd865c9796&amp;type=3#button_round_flat&quot;); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; padding-bottom: 15px; padding-top: 15px; padding-right: 15px; padding-left: 15px; align-items: center;">
         <ui:Image enabled="true" class="btn-icon" style="background-image: url(&quot;project://database/Assets/Sprites/Grey/Double/icon_cross.png?fileID=2800000&amp;guid=d91964a3f7d52eb4cbea0aef495f06f5&amp;type=3#icon_cross&quot;);" />
     </ui:Button>
 </ui:UXML>

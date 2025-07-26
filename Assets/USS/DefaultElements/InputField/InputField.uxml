@@ -1,4 +1,4 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/USS/DefaultElements/InputField/InputField.uss?fileID=7433441132597879392&amp;guid=7933a01db7b5e6c4c90f850af841717b&amp;type=3#InputField" />
-    <ui:TextField style="height: 66px; font-size: 25px;" />
+    <ui:TextField name="TextField" style="height: 66px; font-size: 25px; overflow: hidden; white-space: nowrap;" />
 </ui:UXML>
