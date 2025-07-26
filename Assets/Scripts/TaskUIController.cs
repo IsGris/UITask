@@ -35,6 +35,8 @@ public class TaskUIController : MonoBehaviour
         slider.OnValueChange += Slider_OnValueChange;
         steppedSlider = rootElement.Q<SteppedGameSlider>();
         steppedSlider.OnSteppedValueChange += SteppedSlider_OnSteppedValueChange;
+        acceptBTN.SetEnabled(false);
+        acceptBTN.enabledSelf = false;
         Debug.Log("Init UI successful");
     }
 
